@@ -1,0 +1,16 @@
+<div class="modal-overlay" [class.opened]="isOpen">
+  <div class="modal-content">
+    <button class="close-button" (click)="close()">
+      <i class="fas fa-times"></i>
+    </button>
+    
+    <div class="modal-image-container">
+      <img [src]="src" [alt]="alt" />
+    </div>
+
+    <div class="modal-info">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+    </div>
+  </div>
+</div>
